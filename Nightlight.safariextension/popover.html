@@ -22,7 +22,7 @@
 <hr>
 <div id="colorGrid"></div>
 <script>
-var BLACKLIST = safari.extension.settings.blacklist.split(',');
+var BLACKLIST = []//safari.extension.settings.blacklist.split(',');
 var WARNING = {
   NOT_WEBPAGE: 'This is not a webpage and won\'t be modified.',
   BLACKLISTED: 'This page is blacklisted and won\'t be modified.'
@@ -73,7 +73,7 @@ function displayColorGrid(colors) {
 
     colorTable.appendChild(colorRow);
   }
-  
+
   colorGrid.appendChild(colorTable);
 }
 
@@ -106,7 +106,7 @@ function toggleNightlight() {
   document.getElementById('isOnCheckbox').checked = isOn;
   document.getElementById('statusText').innerHTML = (isOn ? '<b>On</b>' : 'Off');
   document.getElementById('colorGrid').innerText = '';
-  
+
   if (blacklistContains(url)) {
     document.getElementById('colorGrid').innerText = WARNING.BLACKLISTED;
   } else if (!isWebpage(url)) {

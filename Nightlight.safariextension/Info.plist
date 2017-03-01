@@ -5,9 +5,9 @@
 	<key>Author</key>
 	<string>Gofake1</string>
 	<key>Builder Version</key>
-	<string>12603.1.6.0.2</string>
+	<string>12602.4.8</string>
 	<key>CFBundleDisplayName</key>
-	<string>Nightlight</string>
+	<string>Nightlight local</string>
 	<key>CFBundleIdentifier</key>
 	<string>net.gofake1.nightlight</string>
 	<key>CFBundleInfoDictionaryVersion</key>
